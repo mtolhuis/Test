@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Portfolio">
+  <meta name="theme-color" content="#f2f2f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio</title>
+</head>
+<body>
+  <div id="app">
+    <header id="topbar">
+      <h1 id="title">Portfolio</h1>
+      <div id="actions"></div>
+    </header>
+    <main id="view"></main>
+    <nav id="tabbar" aria-label="Tabbladen">
+      <div id="tabs-scroll"></div>
+      <button id="tab-library" class="tab" type="button"></button>
+    </nav>
+  </div>
+
+  <input type="file" id="file-input" accept="image/*" multiple hidden>
+
+  <div id="lightbox" hidden>
+    <div class="lb-slides"></div>
+    <div class="lb-top">
+      <span class="lb-count"></span>
+      <button type="button" class="lb-close" aria-label="Sluiten">✕</button>
+    </div>
+  </div>
+
+  <div id="toast" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
